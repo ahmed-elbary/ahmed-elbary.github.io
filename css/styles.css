@@ -10970,3 +10970,11 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* CV button */
+.social-icons .social-icon.cv-button {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
