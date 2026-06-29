@@ -26,15 +26,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Featured Project</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">My Journey</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cv">CV</a></li> -->
                 </ul>
             </div>
         </nav> 
+        
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
@@ -72,7 +73,101 @@
                     </div>
                 </div>
             </section>
+
             <hr class="m-0" />
+
+            <!-- Featured Project -->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+
+                    <h2 class="mb-5">Featured Project</h2>
+
+                    <h3 class="mb-2">
+                        Improving Multi-Robot Coordination Through Space-Time Path Planning
+                    </h3>
+
+                    <div class="subheading mb-4">
+                        Master's Dissertation · University of Lincoln · 2025
+                    </div>
+
+                    <!-- Project Image -->
+                    <img src="assets/img/MRPP_Simulation.gif"
+                        alt="Multi-Robot Path Planning Simulation"
+                        class="img-fluid rounded shadow mb-4"
+                        style="float:right;width:550px;height:400px;"
+                        loop=infinite>
+
+                    <h4>The Challenge</h4>
+
+                    <p>
+                        Coordinating multiple autonomous robots within shared environments is a
+                        complex planning problem. Robots must reach their destinations safely
+                        while avoiding collisions, deadlocks, and unnecessary waiting at shared
+                        junctions. <strong>The challenge was to improve overall coordination while
+                        maintaining efficient paths for every robot.</strong>
+                    </p>
+
+                    <h4>My Contribution</h4>
+
+                    <p>
+                        For my Master's dissertation, I independently designed and developed a
+                        <strong>Space-Time Planner</strong> that extends an existing <strong>Fragment Planner</strong> by incorporating temporal awareness into the planning process.
+                        To evaluate both approaches fairly, I built a complete Python simulation
+                        framework capable of running, visualising, and comparing the behaviour
+                        of both planners under identical conditions.
+                    </p>
+
+                    <h4>Results</h4>
+
+                    <p>
+                        The proposed planner successfully improved robot coordination by <strong>reducing
+                        waiting time, shortening travel distances,</strong> and producing smoother overall
+                        navigation compared with the original Fragment Planner. The project
+                        demonstrated how scheduling information can significantly improve
+                        multi-robot path planning performance in shared environments.
+                    </p>
+
+                    <h4>Future Improvements</h4>
+
+                    <p>
+                        Given additional development time, I would extend the planner into a
+                        complete <strong>ROS2 implementation</strong> capable of running on real robotic
+                        platforms. I would also enhance the simulation environment with richer
+                        visualisations and interactive analysis tools.
+                    </p>
+
+                    <h4>KeyWords</h4>
+
+                    <div class="mb-4">
+                        <span class="badge bg-secondary me-2">Python</span>
+                        <span class="badge bg-secondary me-2">Algorithms</span>
+                        <span class="badge bg-secondary me-2">Simulation</span>
+                        <span class="badge bg-secondary me-2">Multi-Robot Path Planning</span>
+                        <span class="badge bg-secondary me-2">ROS2</span>
+                        <span class="badge bg-secondary me-2">Space-Time path Planning</span>
+                    </div>
+
+                    <div class="mt-4">
+                        <a class="btn btn-primary me-3"
+                        href="https://github.com/ahmed-elbary/Multi_Robot_path_planning.git"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            View on GitHub
+                        </a>
+
+                        <a class="btn btn-outline-primary"
+                        href="YOUR_VIDEO_LINK"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            Watch Simulation
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <hr class="m-0">
+
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
@@ -87,7 +182,7 @@
                                 •	Collaborated with a cross-functional team working on hardware-software integration for real-world field conditions
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2025 – July 2025</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2025 - July 2025</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -97,7 +192,7 @@
                                 • Actively participating in team discussions and understanding of the Field Robot Event 2025 in Milano competition.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2024 – September 2025</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">October 2024 - September 2025</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -143,135 +238,201 @@
                     </div>
                 </div>
             </section>
+
             <hr class="m-0" />
 
-
-            <!-- Education-->
+            <!-- Education -->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Lincoln</h3>
-                            <div class="subheading mb-3">Master's of Robotics and AI</div>
-                            <!-- <div>Computer Science - Web Development Track</div> -->
-                            <!-- <p>GPA: 3.23</p> -->
+
+                    <h2 class="mb-4">My Journey</h2>
+
+                    <p class="lead mb-5">
+                        My academic journey has taken me from <strong>Malaysia</strong> to the
+                        <strong>United Kingdom</strong>, where I built a strong engineering
+                        foundation before specialising in robotics and autonomous systems.
+                    </p>
+
+                    <div class="row align-items-center text-center">
+
+                        <!-- Malaysia -->
+                        <div class="col-md-5">
+
+                            <h3>🇲🇾 Malaysia</h3>
+
+                            <h4 class="mt-4">
+                                Universiti Teknologi Malaysia
+                            </h4>
+
+                            <h5 class="text-primary">
+                                BEng Electrical-Mechatronics Engineering
+                            </h5>
+
+                            <p>
+                                <strong>2017 – 2022</strong>
+                            </p>
+
+                            <ul class="text-start">
+                                <li>Built a strong foundation in Electronics Engineering.</li>
+                                <li>Studied Embedded Systems, Control Engineering and Automation.</li>
+                                <li>Developed a passion for intelligent robotic systems.</li>
+                            </ul>
+
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2024 - September 2025</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Universiti Teknologi Malaysia</h3>
-                            <div class="subheading mb-3">Bachelor of Electrical-Mechatronics Engineering</div>
-                            <!-- <p>GPA: 3.56</p> -->
+
+                        <!-- Journey -->
+                        <div class="col-md-2">
+
+                            <h1>✈️</h1>
+
+                            <p class="fw-bold">
+                                Moved to the UK
+                            </p>
+
+                            <small>
+                                To specialise in Robotics & AI
+                            </small>
+
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2017 - February 2022</span></div>
+
+                        <!-- United Kingdom -->
+                        <div class="col-md-5">
+
+                            <h3>🇬🇧 United Kingdom</h3>
+
+                            <h4 class="mt-4">
+                                University of Lincoln
+                            </h4>
+
+                            <h5 class="text-primary">
+                                MSc Robotics & AI
+                            </h5>
+
+                            <p>
+                                <strong>2024 – 2025</strong>
+                            </p>
+
+                            <ul class="text-start">
+                                <li>Specialised in Robotics and Autonomous Systems.</li>
+                                <li>Focused on path planning, intelligent algorithms and software development.</li>
+                                <li>Completed a Master's dissertation on Multi-Robot Path Planning.</li>
+                            </ul>
+
+                        </div>
+
                     </div>
+
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Skills-->
+
+            <hr class="m-0">
+
+
+            <!-- Skills -->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
 
-                    <h2 class="mb-5">Technical Skills</h2>
+                    <h2 class="mb-4">Technical Skills</h2>
 
-                    <div class="subheading mb-3">Programming</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Python</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>C++</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>MATLAB</li>
-                    </ul>
-
-                    <div class="subheading mb-3">Robotics & AI</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>ROS2</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Gazebo</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Navigation2</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Computer Vision</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Machine Learning</li>
-                    </ul>
-
-                    <div class="subheading mb-3">Engineering Tools</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>SolidWorks</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Git & GitHub</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Linux</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Embedded Systems</li>
-                    </ul>
-
-                    <div class="subheading mb-3">Professional Skills</div>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Problem Solving</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Technical Documentation</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Team Collaboration</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Project Planning</li>
-                    </ul>
-
-                </div>
-            </section>
-            <!-- Research Interests -->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-
-                    <h2 class="mb-5">Research Interests</h2>
-
-                    <p>
-                        I am passionate about developing intelligent robotic systems that can operate safely and autonomously in real-world environments. My primary interests include autonomous navigation, perception, and decision-making for mobile robots.
+                    <p class="lead mb-5">
+                        Throughout my academic and personal projects, I have developed experience
+                        across robotics, software development, artificial intelligence and
+                        electronics engineering.
                     </p>
 
-                    <p class="mb-0">
-                        My technical interests also include computer vision, machine learning, embedded systems, ROS2 development, and autonomous vehicle safety. I enjoy exploring emerging technologies and applying them to practical engineering challenges.
-                    </p>
+                    <div class="row">
+
+                        <!-- Programming -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="skill-card">
+                                <h4>Programming</h4>
+                                <hr>
+                            <div class="skill-tags">
+                                <span>Python</span>
+                                <span>C++</span>
+                                <span>MATLAB</span>
+                                <span>Git & GitHub</span>
+                                <span>Linux (Ubuntu)</span>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- Robotics -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="skill-card">
+                                <h4>Robotics</h4>
+                                <hr>
+
+                                <div class="skill-tags">
+                                    <span>ROS 2</span>
+                                    <span>Gazebo</span>
+                                    <span>RViz</span>
+                                    <span>Navigation2</span>
+                                    <span>SLAM</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="skill-card">
+                                <h4>Artificial Intelligence</h4>
+                                <hr>
+                                <div class="skill-tags">
+                                    <span>Computer Vision</span>
+                                    <span>Machine Learning</span>
+                                    <span>Path Planning</span>
+                                    <span>Autonomous Systems</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Engineering -->
+                        <div class="col-lg-6 mb-4">
+                            <div class="skill-card">
+                                <h4>Engineering</h4>
+                                <hr>
+
+                                <div class="skill-tags">
+                                    <span>Embedded Systems</span>
+                                    <span>Electronics</span>
+                                    <span>Control Systems</span>
+                                    <span>SolidWorks</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
             </section>
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
+
+            <hr class="m-0">
+
+
+
+
+            <hr class="m-0">
+
+            <!-- Certifications -->
+            <section class="resume-section" id="certifications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
+                    <h2 class="mb-4">Certifications</h2>
+                    <p class="lead mb-5">
+                        These certifications reflect my continuous professional development and commitment to staying current with the latest advancements in robotics, autonomous systems, and related technologies.
+                    </p>
+                    <div class="row justify-content-center">
+                        <div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="02dd1aa3-5049-47e9-89be-6ef6fe984d01" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="350" data-iframe-height="270" data-share-badge-id="1ea29fc1-8d45-457f-b19d-1edd842c16d6" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="350" data-iframe-height="270" data-share-badge-id="e7b0246f-ee17-4d3e-80b0-b6d3cc1179d7" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="300" data-iframe-height="270" data-share-badge-id="7966a0ae-8550-4aec-8de2-0faeef91ad5f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="350" data-iframe-height="270" data-share-badge-id="172a6b59-06d3-4c8b-9f1f-cca5f46828b8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                    </div>
                 </div>
             </section>
+
+            <hr class="m-0">
+
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
